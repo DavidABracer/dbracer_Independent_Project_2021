@@ -8,10 +8,12 @@ public class ThirdPersonMovementScript : MonoBehaviour
         public CharacterController controller;
         public Transform cam;
 
-        public float speed = 6f;
+        public float speed = 8f;
+        
 
         public float turnSmoothTime = 0.1f;
         float turnSmoothVelocity;
+        public GameObject DragonsandMonsterKillerPrefab;
 
         // Update is called once per frame
         void Update()
@@ -29,6 +31,13 @@ public class ThirdPersonMovementScript : MonoBehaviour
             Vector3 moveDir = Quaternion.Euler(0f, angle, 0f) * Vector3.forward;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
-        
+
+        if (Input.GetKeyDown(KeyCode.Space))
+
+        {
+            Instantiate(DragonsandMonsterKillerPrefab, transform.position, DragonsandMonsterKillerPrefab.transform.rotation);
+
+        }
+
+        }
     }
-}
