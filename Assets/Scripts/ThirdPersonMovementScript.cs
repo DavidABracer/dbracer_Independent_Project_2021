@@ -32,7 +32,7 @@ public class ThirdPersonMovementScript : MonoBehaviour
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Tab))
 
         {
             Instantiate(DragonsandMonsterKillerPrefab, transform.position, DragonsandMonsterKillerPrefab.transform.rotation);
