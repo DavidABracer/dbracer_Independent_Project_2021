@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: dcbf6a954ac62b9419d2ef34d2e006b2
+  - enabled: 1
+    path: Assets/Scenes/CASTLEEXPLORER.unity
+    guid: f81b6e2242e2b6a42b9253190020b19a
   m_configObjects: {}
